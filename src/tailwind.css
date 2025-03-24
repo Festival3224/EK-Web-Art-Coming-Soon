@@ -1,0 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@layer components {
+    .font-latin {
+      font-family: 'Marcellus', serif;
+    }
+  
+    .font-cyrillic {
+      font-family: 'Philosopher', serif;
+    }
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,19 @@
+{
+    "headline": "¡Nuestro nuevo sitio web está en construcción!",
+    "description": "Regístrate para ser de los primeros en descubrir ofertas diseñadas para impulsar tu negocio. ¡No pierdas la oportunidad de hacer crecer tu marca con EK Web Art!",
+    "form": {
+      "namePlaceholder": "Tu nombre",
+      "placeholder": "Introduce tu correo electrónico",
+      "submit": "Regístrate",
+      "errors": {
+        "name": "El nombre es obligatorio.",
+        "required": "El correo electrónico es obligatorio.",
+        "email": "Por favor, introduce una dirección de correo válida."
+      },
+      "agreement": "ingresando tus datos, aceptas un email de marketing de EK Web Art.",
+      "success": "¡Gracias por registrarte!",
+      "error": "Error al enviar el formulario. Inténtalo de nuevo."
+    },
+    "footer": "Foto de KNOX. Diseñado y codificado por EK Web Art © 2025"
+  }
+  

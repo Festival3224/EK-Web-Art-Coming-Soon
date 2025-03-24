@@ -1,0 +1,19 @@
+{
+    "headline": "We are currently working on our awesome website!",
+    "description": "Sign up to be among the first to discover offers designed to elevate your business. Don’t miss the chance to grow your brand with EK Web Art!",
+    "form": {
+      "namePlaceholder": "Enter your name",
+      "placeholder": "Enter your email",
+      "submit": "Sign Up",
+      "errors": {
+        "name": "This field is required",
+        "required": "This field is required",
+        "email": "Please enter a valid email address"
+      },
+      "agreement": "by entering your name and email and clicking button you agree to recieve marketing email message from EK Web Art at the email address provided.",
+      "success": "Thank you for signing up!",
+      "error": "There was an error submitting your information. Please try again."
+    },
+    "footer": "Photo from KNOX. Designed & coded by © 2025 EK Web Art"
+  }
+  
