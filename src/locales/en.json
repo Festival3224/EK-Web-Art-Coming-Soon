@@ -4,7 +4,7 @@
     "form": {
       "namePlaceholder": "Enter your name",
       "placeholder": "Enter your email",
-      "submit": "Sign Up",
+      "submit": "Contact Me",
       "errors": {
         "name": "This field is required",
         "required": "This field is required",

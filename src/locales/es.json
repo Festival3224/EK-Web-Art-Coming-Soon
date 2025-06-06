@@ -4,7 +4,7 @@
     "form": {
       "namePlaceholder": "Tu nombre",
       "placeholder": "Introduce tu correo electrónico",
-      "submit": "Regístrate",
+      "submit": "Contáctame",
       "errors": {
         "name": "El nombre es obligatorio.",
         "required": "El correo electrónico es obligatorio.",

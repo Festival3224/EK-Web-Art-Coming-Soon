@@ -14,6 +14,10 @@ export default {
         'static-bg': "url('./assets/bg-static.jpg')",
       },
     },
+    container: {
+      center: true,
+      padding: '1rem', // отступы слева и справа: 16px
+    },  
   },
   plugins: [],
 }

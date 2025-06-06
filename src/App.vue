@@ -7,13 +7,13 @@
       class="absolute w-full z-10 py-10 transition-opacity duration-1000"
       :class="showHeaderFooter ? 'opacity-100' : 'opacity-0'"
     >
-      <nav class="container flex items-center mx-auto">
+      <nav class="container mx-auto flex items-center justify-between">
         <p class="text-white text-3xl font-Marcellus font-medium">EK Web Art</p>
-        <div class="flex flex-auto justify-end gap-4">
+        <div class="flex flex-auto justify-end gap-2 md:gap-4">
           <button v-for="lang in languages" :key="lang" @click="changeLanguage(lang)" :class="{
                 'bg-orange-400 text-black font-bold border-orange-400': lang === currentLanguage,
                 'border border-gray-300 text-white hover:border-gray-800 hover:bg-black hover:opacity-60 hover:text-orange-300': lang !== currentLanguage
-              }" class="px-4 py-2 rounded transition">
+              }" class="px-2 py-1 md:px-4 md:py-2 rounded transition">
             {{ lang.toUpperCase() }}
           </button>
         </div>
@@ -22,16 +22,16 @@
 
     <!-- Main Content -->
     <main 
-      class="relative container min-h-screen pb-20 pt-36 lg:py-20 mx-10 lg:mx-auto flex flex-col items-start justify-center text-left transition-opacity duration-1000"
+      class="relative container min-h-screen pb-20 pt-36 lg:py-20 lg:mx-auto flex flex-col items-start justify-center text-left transition-opacity duration-1000"
       :class="showMainContent ? 'opacity-100' : 'opacity-0'"
     >        
-      <h1 class="w-3/4 md:w-3/5 xl:w-1/2 tracking-tight text-5xl md:text-7xl xl:text-8xl font-medium mb-4 text-white"
+      <h1 class="w-full md:w-3/4 2xl:w-1/2 tracking-tight text-5xl md:text-7xl xl:text-8xl font-medium mb-4 text-white"
           :class="isCyrillic($t('headline')) ? 'font-cyrillic' : 'font-latin'">{{ $t('headline') }}</h1>
-      <p class="w-1/2 mt-20 text-3xl text-gray-200 mb-8">{{ $t('description') }}</p>
+      <p class="w-full lg:w-1/2 mt-20 text-3xl text-gray-200 mb-8">{{ $t('description') }}</p>
 
       <!-- Signup Form -->
-      <form @submit.prevent="submitForm" class="mt-12 w-1/2 flex flex-col gap-4" novalidate>
-        <div class="flex items-start gap-4 w-full">
+      <form @submit.prevent="submitForm" class="mt-12 lg:w-1/2 flex flex-col gap-4" novalidate>
+        <div class="flex flex-col md:flex-row items-stretch md:items-start gap-4 w-full">
 
           <BaseInput
              v-model="state.name"
@@ -56,7 +56,7 @@
             {{ $t('form.submit') }}
           </button>
         </div>
-        <div class="text-gray-400 w-5/6 text-sm">
+        <div class="text-gray-400 w-5/6 text-xs">
           <p>{{ $t('form.agreement') }}</p>
         </div>
 
