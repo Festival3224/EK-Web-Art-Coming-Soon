@@ -25,12 +25,12 @@
       class="relative container min-h-screen pb-20 pt-36 lg:py-20 lg:mx-auto flex flex-col items-start justify-center text-left transition-opacity duration-1000"
       :class="showMainContent ? 'opacity-100' : 'opacity-0'"
     >        
-      <h1 class="w-full md:w-3/4 2xl:w-1/2 tracking-tight text-5xl md:text-7xl xl:text-8xl font-medium mb-4 text-white"
+      <h1 class="w-full md:w-3/4 2xl:w-1/2 tracking-tight text-4xl md:text-7xl xl:text-8xl font-medium lg:mb-4 text-white"
           :class="isCyrillic($t('headline')) ? 'font-cyrillic' : 'font-latin'">{{ $t('headline') }}</h1>
-      <p class="w-full lg:w-1/2 mt-20 text-3xl text-gray-200 mb-8">{{ $t('description') }}</p>
+      <p class="w-full lg:w-1/2 mt-14 lg:mt-20 text-xl lg:text-3xl text-gray-200 mb-8">{{ $t('description') }}</p>
 
       <!-- Signup Form -->
-      <form @submit.prevent="submitForm" class="mt-12 lg:w-1/2 flex flex-col gap-4" novalidate>
+      <form @submit.prevent="submitForm" class="mt-6 md:mt-12 lg:w-1/2 flex flex-col gap-2 md:gap-4" novalidate>
         <div class="flex flex-col md:flex-row items-stretch md:items-start gap-4 w-full">
 
           <BaseInput
@@ -65,7 +65,7 @@
 
     <!-- Footer -->
     <footer 
-      class="absolute bottom-0 w-full text-center py-4 text-gray-400 text-sm transition-opacity duration-1000"
+      class="absolute bottom-0 w-full text-center py-4 text-gray-400 text-xs lg:text-sm transition-opacity duration-1000"
       :class="showHeaderFooter ? 'opacity-100' : 'opacity-0'">
         <p>{{ $t('footer') }}</p>
     </footer>
